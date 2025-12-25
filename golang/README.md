@@ -1,6 +1,6 @@
-## Go Implementation
+# Go Implementation
 
-Demonstrations of HTTP retry logic with exponential backoff and jitter in Go.
+## Demonstrations of HTTP retry logic with exponential backoff and jitter in Go.
 ---
 
 ### Running with Docker (No Go installation required)
