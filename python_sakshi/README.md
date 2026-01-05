@@ -33,7 +33,7 @@ Code Settings
 Inside sakshi_backoff.py, you can change:
 
 backoff(
-    "https://google.com/200",  # URL
+    "https://mock.httpstatus.io/500",  # URL
     3,                         # max retries
     1.0,                       # base delay
     0.25,                      # jitter

@@ -26,4 +26,4 @@ def backoff(url, max_retries, base_delay, jitter, timeout):
 
 
 if __name__ == "__main__":
-    backoff("https://mock.httpstatus.io/201", 3, 1.0, 0.25, 3.0)
+    backoff("https://mock.httpstatus.io/500", 3, 1.0, 0.25, 3.0)
