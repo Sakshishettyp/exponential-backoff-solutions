@@ -7,7 +7,7 @@ The script keeps retrying a request when it fails, waiting longer each time:
 
 Jitter adds a small random delay so all retries don’t hit the server at the same time.
 
-📂 Project Structure
+Project Structure
 .
 ├── sakshi_backoff.py
 ├── requirements.txt
@@ -15,9 +15,17 @@ Jitter adds a small random delay so all retries don’t hit the server at the sa
 
 Run locally (without Docker)
 
+Create a virtual environment
+python -m venv venv
+
+Activate the virtual environment
+venv\Scripts\Activate
+
+Come inside folder
+cd python_sakshi
+
 Install dependencies:
 pip install -r requirements.txt
-
 
 Run the script:
 python sakshi_backoff.py

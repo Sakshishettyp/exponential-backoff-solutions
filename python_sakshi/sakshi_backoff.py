@@ -16,11 +16,11 @@ def backoff(url, max_retries, base_delay, jitter, timeout):
         except Exception as e:
             wait = base_delay * (2**i) + random.uniform(-jitter, jitter)
             wait = max(0, wait)
-
             print(f"Try {i + 1}")
             print(e)
             print(f"waiting {wait:.2f}s")
-            time.sleep(wait)
+            if i < max_retries - 1:
+                time.sleep(wait)
 
     print("Request failed after max retries")
 
